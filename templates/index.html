@@ -1,1 +1,25 @@
-<!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mlokhieh</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+<body class="bgcolor">
+
+	<h1>My favorit food is Mlokhieh</h1>
+	<p>Because Mlokhieh is the best food ever!</p>
+	<ul>
+		{%if oppoeite_day == True %}
+			{% for food1 in least %}
+			<li>{{food1}}</li>
+			{%endfor%}
+
+		{%else%}
+			{% for i in foods%}
+			<li> {{i}} </li>
+			{% endfor %}
+		{%endif%}
+	</ul>
+
+</body>
+</html>
